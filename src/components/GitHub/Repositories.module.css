@@ -1,0 +1,30 @@
+.Row {
+    justify-content: center;
+}
+
+
+.Card {
+    width: 40rem;
+    margin: 1.5rem;
+}
+.Card.Img {
+    margin-top: 1rem;
+
+}
+.Link {
+    text-decoration: none;
+
+}
+
+.Button {
+    background-color: #B10F2E;
+    border-color: #B10F2E;
+    color: white;
+
+}
+
+.Button:hover {
+    background-color: #e74561;
+    border-color: #e74561;
+    color: white;
+}

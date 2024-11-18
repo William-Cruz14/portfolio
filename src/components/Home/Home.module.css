@@ -1,0 +1,155 @@
+.NavBar {
+    background: #212529;
+}
+
+.NavBarElements {
+    margin-top: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 35px;
+    color: #037887;
+
+}
+
+.NavCollapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+
+.navbar [data-rr-ui-navbar-nav] .navlink {
+    font-family: "Roboto Slab", serif;
+    color: #f15355;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #037887;
+}
+
+.navLink:visited {
+    color: #dcdcdc;
+}
+
+.navLink:active {
+    color: #f15355;;
+}
+
+
+.Brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ImgBrand {
+    width: 40px;
+}
+
+
+.Img {
+    width: 300px;
+}
+
+.Img:hover {
+    border: 4px solid #037887;
+}
+
+.Col {
+    display: flex;
+    justify-content: center;
+}
+
+.ImgCode {
+    width: 40px;
+
+}
+
+.Title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #f15355;
+
+}
+
+.SubTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #037887;
+}
+
+.SubText {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: #f15355;
+}
+.ButtonProjects {
+    color: #dcdcdc;
+    margin-bottom: 2rem;
+    font-family:"Roboto Slab", serif;
+    background-color: #037887;
+    border-color: #037887;
+}
+
+
+.ButtonProjects:hover {
+    background-color: #f15355;
+    border-color: #f15355;
+}
+
+.CardTitle {
+    font-family: Georgia, serif;
+    color: #f15355;
+}
+
+.CardText {
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
+
+.TextFooter {
+    align-items: center;
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
+
+.Paragraph {
+    text-align: justify;
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
+.Footer {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.Section {
+    padding-bottom: 2rem;
+}
+
+
+.Card {
+    padding: 0.5rem;
+    background: #212529;
+}
+
+.Card:hover {
+    border: 4px solid #037887 ;
+}
+
+.Badge {
+    background-color: #f15355;
+    color: #dcdcdc;
+}
+
+.ImageFooter {
+    width: 2.5rem;
+    padding: 0.5rem;
+}
+
+.ImageFooter:hover {
+    border: 4px solid #037887;
+}
