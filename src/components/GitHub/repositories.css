@@ -1,41 +1,39 @@
-.Row {
+#Row {
     justify-content: center;
 }
 
-.Text {
+#Text {
     font-family: "Roboto Slab", serif;
     color: #dcdcdc;
 }
 
-.Card {
+#Card {
     width: 40rem;
     margin: 1.5rem;
     background: #212529;
 }
-.Card.Img {
+
+#ImgRepositories {
+    width: 100%;
     margin-top: 1rem;
 
 }
-.Link {
-    text-decoration: none;
 
-}
-
-.Button {
+#ButtonRepositories {
     background-color: #f15355;
     border-color: #f15355;
     font-family: "Roboto Slab", serif;
     color: #dcdcdc;
 }
 
-.Button:hover {
+#ButtonRepositories:hover {
     background-color: #037887;
     border: 4px solid #037887;
     color: #212529;
 
 }
 
-.Button:active {
+#ButtonRepositories:active {
     background-color: #dcdcdc !important;
     border: 4px solid #dcdcdc !important;
     color: #212529 !important;

@@ -1,0 +1,132 @@
+#btn-primary {
+    color: #dcdcdc;
+    margin-bottom: 2rem;
+    font-family:"Roboto Slab", serif;
+    background-color: #037887;
+    border-color: #037887;
+}
+
+#btn-primary:hover {
+    transform: translate(10px);
+    background-color: #f15355;
+    border-color: #f15355;
+}
+
+#btn-primary:active {
+    background-color: #dcdcdc;
+    border: 4px solid #dcdcdc;
+    color: #212529;
+}
+
+#imgcode {
+     width: 40px;
+}
+
+#card {
+    padding: 0.5rem;
+    background: #212529;
+}
+
+#card:hover {
+    border: 4px solid #037887 ;
+}
+
+
+#cardtext {
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
+
+#Img {
+    width: 300px;
+    border: 1px solid #037887;
+    background: #037887;
+    margin-bottom: 1rem;
+}
+
+#Img:hover {
+    border: 4px solid #f15355;
+}
+
+.Col {
+    display: flex;
+    justify-content: center;
+}
+
+
+.Title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: #f15355;
+
+}
+
+.SubTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #037887;
+}
+
+.SubText {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: #f15355;
+}
+
+.Paragraph {
+    text-align: justify;
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdf;
+}
+
+.CardTitle {
+    color: #f15355;
+}
+
+.CardText {
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
+
+.TextFooter {
+    align-items: end;
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
+
+
+.Footer {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.Section {
+    padding-bottom: 2rem;
+}
+
+
+.Card {
+    padding: 0.5rem;
+    background: #212529;
+}
+
+.Card:hover {
+    border: 4px solid #037887 ;
+}
+
+.Badge {
+    background-color: #f15355;
+    color: #dcdcdc;
+}
+
+.ImageFooter {
+    width: 2.5rem;
+    margin: 0.5rem;
+}
+
+.ImageFooter:hover {
+    border-radius: 8px;
+    border: 4px solid #037887;
+}

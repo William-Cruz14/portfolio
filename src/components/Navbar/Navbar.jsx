@@ -1,36 +1,40 @@
 
-import {Image, Nav, Navbar} from 'react-bootstrap';
-import Container from "react-bootstrap/Container";
-import styles from "./Navbar.module.css"
-import logo from "../../assets/imghome/p_icon.svg";
+import { Image, Nav, Navbar } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import logo from '../../assets/imgnavbar/p_icon.svg';
+import { Link } from "react-router-dom";
+import './navbar.css';
 
 const Nave = () => {
+
+    const urlLinkedin = 'https://www.linkedin.com/in/william-cruz-da-silva-a6a394b9/';
+
     return (
-        <Navbar expand={"md"} sticky={"top"} className={styles.NavBar}>
-            <Container>
-                <Navbar.Brand className={styles.Brand} href="/">
-                    <Image className={styles.ImgBrand} src={logo ?? "oops"}></Image>
-                    <Navbar.Text className={styles.NavBarElements}>ortifolio</Navbar.Text>
-                </Navbar.Brand>
-                <div className={styles.NavToggle}>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                </div>
-                <Navbar.Collapse id="basic-navbar-nav" className={styles.NavCollapse}>
-                    <Nav>
-                        <div id={"acustom"}>
-                            <a className={styles.acustom} href={urlGitHub} target={'_blank'}>Projects</a>
-                        </div>
-                        <div id={"acustom"}>
-                            <a className={styles.acustom} href={urlLinkedin} target={'_blank'}>Game</a>
-                        </div>
-                        <div id={"acustom"}>
-                            <a className={styles.acustom} href={urlLinkedin} target={'_blank'}>Linkedin</a>
-                        </div>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+            <Navbar expand={"md"} sticky={"top"} id={'NavBar'}>
+                <Container>
+                    <Navbar.Brand id={'Brand'} href='/'>
+                        <Image id={'ImgBrand'} src={logo ?? 'oops'}></Image>
+                        <Navbar.Text id={'NavBarElements'}>ortifolio</Navbar.Text>
+                    </Navbar.Brand>
+                    <div id={'NavToggle'}>
+                        <Navbar.Toggle aria-controls='basic-navbar-nav'/>
+                    </div>
+                    <Navbar.Collapse id="basic-navbar-nav" className={'text-end d-md-flex justify-content-end'}>
+                        <Nav>
+                            <div>
+                                <Link to={'/projects'} id={'acustom'}>Projetos</Link>
+                            </div>
+                            <div>
+                                <Link to={'/game'} id={'acustom'}>Jogo</Link>
+                            </div>
+                            <div>
+                                <Link to={urlLinkedin}  id={'acustom'} target={'_blank'}>Linkedin</Link>
+                            </div>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
     );
 }
 
-export { Nave }
+export { Nave };

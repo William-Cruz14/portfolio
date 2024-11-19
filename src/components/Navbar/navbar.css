@@ -1,41 +1,34 @@
-.NavBar {
+#NavBar {
     background: #212529;
 }
 
-.acustom {
+#acustom {
     font-family: "Roboto Slab", serif;
     margin-right: 0.6rem;
     color: #f15355;
     text-decoration: none;
 }
 
-.acustom:hover {
+#acustom:hover {
     color: #037887;
 }
 
-.acustom:visited {
+#acustom:visited {
     color: #dcdcdc !important;
 }
 
-.acustom a:active {
+#acustom a:active {
     color: #dcdcdc !important;
 }
 
-.NavBarElements {
+#NavBarElements {
     padding-top: 1rem;
     font-family: "Bebas Neue", sans-serif;
     font-size: 2.1rem;
     color: #037887;
 }
 
-.NavCollapse {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-}
-
-.NavToggle {
+#NavToggle {
 
     button {
         color: #f15355;
@@ -44,18 +37,17 @@
     }
 
     span {
-        color: #f15355;
+        color:  #f15355;
     }
-
 
 }
 
-.Brand {
+#Brand {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.ImgBrand {
+#ImgBrand {
     width: 40px;
 }

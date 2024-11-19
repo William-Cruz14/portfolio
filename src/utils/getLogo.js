@@ -1,9 +1,9 @@
-import python from '../assets/imglanguages/python.svg';
-import javascript from '../assets/imglanguages/javascript.svg';
-import c  from '../assets/imglanguages/c++.svg';
-import java from '../assets/imglanguages/java.svg';
-import dart from '../assets/imglanguages/dart.svg';
-import html from '../assets/imglanguages/html.svg';
+import python from '../assets/imgrepositories/python.svg';
+import javascript from '../assets/imgrepositories/javascript.svg';
+import c  from '../assets/imgrepositories/c++.svg';
+import java from '../assets/imgrepositories/java.svg';
+import dart from '../assets/imgrepositories/dart.svg';
+import html from '../assets/imgrepositories/html.svg';
 
 
 export const getLogos = {

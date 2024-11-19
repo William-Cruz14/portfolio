@@ -1,9 +1,8 @@
-import {useEffect, useState} from "react";
-import { getGitHub } from "../../utils/getGitHub.js";
-import { Card, Row, Container, Button } from "react-bootstrap";
-import { getLogos } from "../../utils/getLogo.js";
-import styles from "./Repositories.module.css";
-
+import {useEffect, useState} from 'react';
+import { getGitHub } from '../../utils/getGitHub.js';
+import { Card, Row, Container, Button } from 'react-bootstrap';
+import { getLogos } from '../../utils/getLogo.js';
+import './repositories.css';
 
 const Repositories = () => {
 
@@ -20,7 +19,7 @@ const Repositories = () => {
                 }
 
             } catch (error) {
-                console.error("Error: ",error);
+                console.error('Error: ',error);
             }
         };
 
@@ -29,29 +28,29 @@ const Repositories = () => {
     }, []);
 
     const handleClick = (link) => {
-        link ? window.open(link, "_blank") : null;
+        link ? window.open(link, '_blank') : null;
     }
 
     return (
         <div className={'bg-dark'}>
             <Container>
                 {data ? data.map((elements) => (
-                    <Row className={styles.Row} key={elements.id}>
-                        <Card className={styles.Card} >
-                            <Card.Img className={styles.Img} src={getLogos[elements.language]} alt={"Logo " + elements.language} />
+                    <Row id={'Row'} key={elements.id}>
+                        <Card id={'Card'} >
+                            <Card.Img id={'ImgRepositories'} src={getLogos[elements.language]} alt={'Logo ' + elements.language} />
                             <Card.Header>
                                 <Card.Title>Project {elements.language}</Card.Title>
                             </Card.Header>
-                            <Card.Body className={styles.Text}>
+                            <Card.Body id={'Text'}>
                                 <Card.Text>Name project - {elements.full_name}</Card.Text>
                                 <Card.Text>Project description - {
                                     elements.description ?
-                                        elements.description: "Not have description."}</Card.Text>
+                                        elements.description: 'Não contem descrição.'}</Card.Text>
 
                                 <Card.Text>Project owner - {elements.owner.login}</Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <Button className={styles.Button} onClick={() => handleClick(elements.html_url)}>Go view</Button>
+                                <Button id={'ButtonRepositories'} onClick={() => handleClick(elements.html_url)}>Go view</Button>
                             </Card.Footer>
                         </Card>
                     </Row>
