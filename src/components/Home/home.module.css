@@ -2,12 +2,30 @@
     background: #212529;
 }
 
-.NavBarElements {
-    margin-top: 1rem;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 35px;
-    color: #037887;
+.acustom {
+    font-family: "Roboto Slab", serif;
+    margin-right: 0.6rem;
+    color: #f15355;
+    text-decoration: none;
+}
 
+.acustom:hover {
+    color: #037887;
+}
+
+.acustom:visited {
+    color: #dcdcdc !important;
+}
+
+.acustom a:active {
+    color: #dcdcdc !important;
+}
+
+.NavBarElements {
+    padding-top: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.1rem;
+    color: #037887;
 }
 
 .NavCollapse {
@@ -17,25 +35,20 @@
 
 }
 
+.NavToggle {
 
-.navbar [data-rr-ui-navbar-nav] .navlink {
-    font-family: "Roboto Slab", serif;
-    color: #f15355;
-    text-decoration: none;
+    button {
+        color: #f15355;
+        background: #037887;
+        outline: 2px solid #037887;
+    }
+
+    span {
+        color: #f15355;
+    }
+
+
 }
-
-.navLink:hover {
-    color: #037887;
-}
-
-.navLink:visited {
-    color: #dcdcdc;
-}
-
-.navLink:active {
-    color: #f15355;;
-}
-
 
 .Brand {
     display: flex;
@@ -50,6 +63,7 @@
 
 .Img {
     width: 300px;
+    margin-bottom: 1rem;
 }
 
 .Img:hover {
@@ -67,17 +81,17 @@
 }
 
 .Title {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 3rem;
-    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0;
     color: #f15355;
 
 }
 
 .SubTitle {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0;
     color: #037887;
 }
 
@@ -86,6 +100,7 @@
     font-size: 2rem;
     color: #f15355;
 }
+
 .ButtonProjects {
     color: #dcdcdc;
     margin-bottom: 2rem;
@@ -96,8 +111,15 @@
 
 
 .ButtonProjects:hover {
+    transform: translate(5px);
     background-color: #f15355;
     border-color: #f15355;
+}
+
+.ButtonProjects:active {
+    background-color: #dcdcdc !important;
+    border: 4px solid #dcdcdc !important;
+    color: #212529 !important;
 }
 
 .CardTitle {
@@ -111,7 +133,7 @@
 }
 
 .TextFooter {
-    align-items: center;
+    align-items: end;
     font-family: "Roboto Slab", serif;
     color: #dcdcdc;
 }
@@ -122,8 +144,8 @@
     color: #dcdcdc;
 }
 .Footer {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .Section {
@@ -147,9 +169,10 @@
 
 .ImageFooter {
     width: 2.5rem;
-    padding: 0.5rem;
+    margin: 0.5rem;
 }
 
 .ImageFooter:hover {
+    border-radius: 8px;
     border: 4px solid #037887;
 }

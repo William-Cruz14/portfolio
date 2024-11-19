@@ -1,17 +1,17 @@
-import {Container, Row, Col, Navbar, Nav, Image, Card, Badge, Stack, CardHeader} from 'react-bootstrap';
+import {Container, Row, Col, Image, Card, Badge, Stack, CardHeader} from 'react-bootstrap';
 import photo from '../../assets/MyPhoto.jpg';
 import code from '../../assets/imghome/code_icon.svg';
 import mobile from '../../assets/imghome/telephone_icon.svg';
 import github from '../../assets/imghome/github_logo.svg';
 import linkedin from '../../assets/imghome/linkedin_logo.svg';
-import logo from '../../assets/imghome/p_icon.svg';
-import styles from './Home.module.css';
+import styles from './home.module.css';
 import Button from "react-bootstrap/Button";
 
 const HomePage = () =>  {
 
     const urlGitHub = "https://github.com/William-Cruz14";
     const urlLinkedin = "https://www.linkedin.com/in/william-cruz-da-silva-a6a394b9/";
+
 
     const handleClick = (link) => {
         link ? window.open(link, "_blank") : null;
@@ -20,39 +20,16 @@ const HomePage = () =>  {
     return (
         <div className={'bg-dark d-flex flex-column min-vh-100'}>
 
-                <Navbar expand={"md"} sticky={"top"} className={styles.NavBar}>
-                    <Container>
-                    <Navbar.Brand className={styles.Brand} href="/">
-                        <Image className={styles.ImgBrand} src={logo ?? "oops"}></Image>
-                        <Navbar.Text className={styles.NavBarElements}>ortifolio</Navbar.Text>
-                    </Navbar.Brand>
-
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                    <Navbar.Collapse id="basic-navbar-nav" className={styles.NavCollapse}>
-                        <Nav>
-                            <Nav.Link rel={styles.navlink} href={urlGitHub} target={'_blank'}>
-                                GitHub
-                            </Nav.Link>
-                            <Nav.Link className={styles.navlink} href={urlLinkedin} target={'_blank'}>Linkedin<
-                            /Nav.Link>
-                            <Nav.Link className={styles.navlink} href={urlLinkedin} target={'_blank'}>Linkedin
-                            </Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                    </Container>
-                </Navbar>
-
-
-
             <section>
                 <Container>
                     <Row>
-                        <Col md={12} className={'d-flex flex-row gap-2 justify-content-center'}>
-                            <h1 className={styles.Title}>Olá</h1>
-                            <h2 className={styles.SubTitle}>Eu Sou Desenvolvedor</h2>
+                        <Col md={12} className={'d-sm-flex flex-column mb-0'}>
+                                <h1 className={styles.Title}>Olá 👋,</h1>
+                                <h2 className={styles.SubTitle}>Eu Sou</h2>
+                                <h2 className={styles.SubTitle}>Desenvolvedor</h2>
                         </Col>
                         <Col md={6} lg={6}>
-                            <p className={styles.Paragraph}>
+                        <p className={styles.Paragraph}>
                                 Sou um profissional apaixonado por criar soluções digitais inovadoras.
                                 Em meu portfólio, você encontrará projetos desenvolvidos com tecnologias de ponta,
                                 além de minhas habilidades técnicas e certificações.
@@ -86,7 +63,7 @@ const HomePage = () =>  {
                                 Busco oportunidades para aplicar meus conhecimentos e contribuir com a eficiência dos processos e sistemas organizacionais.
                             </p>
                             <Button className={styles.ButtonProjects} >
-                                Projetos
+                                Leia mais
                             </Button>
                         </Col>
                     </Row>
@@ -170,10 +147,10 @@ const HomePage = () =>  {
                 <footer className={styles.Footer}>
                     <Container>
                         <Row>
-                            <Col md={6} className={'text-sm-center text-md-start'}>
+                            <Col sm={12} md={6} className={'text-center text-sm-center text-lg-start'}>
                                 <p className={styles.TextFooter}>&copy; 2023 William Cruz. All rights reserved.</p>
                             </Col>
-                            <Col md={6} className={'text-md-end mt-3 mt-md-0'}>
+                            <Col sm={12} md={6} className={'text-center text-sm-center text-lg-end mt-1 mt-md-0'}>
                                 <Image onClick={() => handleClick(urlGitHub)} className={styles.ImageFooter} src={github ?? "oops"}></Image>
                                 <Image onClick={() => handleClick(urlLinkedin)} className={styles.ImageFooter} src={linkedin ?? "oops"}></Image>
                             </Col>

@@ -50,66 +50,64 @@ const Game = () => {
     };
 
     return (
-        <Container >
-
+        <div className={"bg-dark d-flex flex-column min-vh-100"}>
+            <Container>
                 <Form onSubmit={handleSubmit}>
                     <Row>
-                        <Col className={'mt-1 mb-1'} lg={8} xs={9}>
+                        <Col className={styles.Input} lg={8} xs={9}>
                             <Form.Control
                                 type="text"
                                 maxLength={password.length}
-                                placeholder="enter your attempt"
+                                placeholder="Enter your attempt"
                                 value={attempt}
                                 onChange={(e) => setAttempt(e.target.value)}
                             />
                         </Col>
                         <Col className={'d-flex gap-1 mt-1 mb-1'} xs={12} sm={10} lg={4}>
-                            <Button className={styles.myCustom} type={'submit'}>Guess</Button>
-                            <Button className={styles.myCustom} variant={'danger'} onClick={handleNewGame}>New game</Button>
-                            <Button className={styles.myCustom} variant={'warning'} onClick={handleClickPassword}>View password</Button>
+                            <Button className={styles.myCustom} type={'submit'} variant={'success'}>Guess</Button>
+                            <Button className={styles.Button} variant={'danger'} onClick={handleNewGame}>New game</Button>
+                            <Button className={styles.Button2} onClick={handleClickPassword}>View password</Button>
                         </Col>
 
                     </Row>
                 </Form>
 
+                {attempts.length > 0 && (
+                    <Card className={styles.Table}>
+                        <Card.Header>Previous attempts:</Card.Header>
+                        <ListGroup variant={'flush'}>
+                            {attempts.reverse().map((attempt, index) => (
+                                <ListGroupItem key={index}>
+                                    Attempts {index + 1}: {attempt.value} - Result: {attempt.result}
+                                </ListGroupItem>
+                            ))}
+                        </ListGroup>
+                    </Card>
+                )}
 
+                {result ? (
+                    <Alert variant="info" className="mt-3" style={{fontFamily: "Roboto Slab, serif"}}>
+                        Result: {result}
+                    </Alert>
+                ): null}
 
+                {showPassword ? (
+                    <Alert variant="info" style={{fontFamily: "Roboto Slab, serif"}}>
+                        <Alert.Heading>This is password: {password}</Alert.Heading>
+                    </Alert>
+                ): null}
 
+                {repeat === true ? (
+                    <Alert variant="success">
+                        <Alert.Heading>
+                            Congratulations! You won 🎉
+                        </Alert.Heading>
+                    </Alert>
+                ): null}
 
-            {attempts.length > 0 && (
-                <Card>
-                    <Card.Header>Previous attempts:</Card.Header>
-                    <ListGroup variant={'flush'}>
-                        {attempts.reverse().map((attempt, index) => (
-                            <ListGroupItem key={index}>
-                                Attempts {index + 1}: {attempt.value} - Result: {attempt.result}
-                            </ListGroupItem>
-                        ))}
-                    </ListGroup>
-                </Card>
-            )}
+            </Container>
+        </div>
 
-            {result ? (
-                <Alert variant="info" className="mt-3">
-                    Result: {result}
-                </Alert>
-            ): null}
-
-            {showPassword ? (
-                <Alert variant="info">
-                    <Alert.Heading>This is password: {password}</Alert.Heading>
-                </Alert>
-            ): null}
-
-            {repeat === true ? (
-                <Alert variant="success">
-                    <Alert.Heading>
-                        Congratulations! You won
-                    </Alert.Heading>
-                </Alert>
-            ): null}
-
-        </Container>
     );
 };
 

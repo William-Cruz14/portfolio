@@ -2,10 +2,58 @@
     flex-direction: column;
 }
 Button.myCustom {
-    font-weight: bold;
-    font-family: Alef, serif;
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
 }
 
-.Input {
+.Button {
+    background-color: #f15355;
+    border-color: #f15355;
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
 
+.Button:hover {
+    background-color: #f15355;
+    border-color: #f15355;
+    color: #dcdcdc;
+
+}
+
+.Button:active {
+    transform: none;
+    background-color: #dcdcdc !important;
+    border: 4px solid #dcdcdc !important;
+    color: #212529 !important;
+}
+
+.Button2 {
+    background-color: #037887;
+    border-color: #037887;
+    font-family: "Roboto Slab", serif;
+    color: #dcdcdc;
+}
+
+.Button2:hover {
+    background-color: #037887;
+    border-color: #037887;
+    color: #dcdcdc;
+
+}
+
+.Button2:active {
+    transform: none;
+    background-color: #dcdcdc !important;
+    border: 4px solid #dcdcdc !important;
+    color: #212529 !important;
+}
+
+
+.Input {
+    margin-top: 4px;
+    font-family: "Roboto Slab", serif;
+}
+
+.Table {
+    font-family: "Roboto Slab", serif;
 }

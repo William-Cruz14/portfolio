@@ -42,7 +42,7 @@ const Repositories = () => {
                             <Card.Header>
                                 <Card.Title>Project {elements.language}</Card.Title>
                             </Card.Header>
-                            <Card.Body>
+                            <Card.Body className={styles.Text}>
                                 <Card.Text>Name project - {elements.full_name}</Card.Text>
                                 <Card.Text>Project description - {
                                     elements.description ?
@@ -51,7 +51,7 @@ const Repositories = () => {
                                 <Card.Text>Project owner - {elements.owner.login}</Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <Button className={styles.Button} onClick={() => handleClick(elements.html_url)} variant="info">Go view</Button>
+                                <Button className={styles.Button} onClick={() => handleClick(elements.html_url)}>Go view</Button>
                             </Card.Footer>
                         </Card>
                     </Row>
