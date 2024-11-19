@@ -2,6 +2,7 @@ import { Container, Row, Col, Image, Card, Badge, Stack, CardHeader } from 'reac
 import Button from "react-bootstrap/Button";
 import { homeImg } from "./getHomeImg.js";
 import './home.css';
+import {Link} from "react-router-dom";
 
 const HomePage = () =>  {
 
@@ -34,8 +35,8 @@ const HomePage = () =>  {
                             </p>
                         </Col>
                         <Col md={12}>
-                            <Button href={'/projects'} id={'btn-primary'}>
-                                Projetos
+                            <Button id={'btn-primary'}>
+                                <Link id={'btnlink'} to={'/projects'}>Projetos</Link>
                             </Button>
                         </Col>
                     </Row>

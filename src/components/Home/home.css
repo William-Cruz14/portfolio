@@ -18,6 +18,16 @@
     color: #212529;
 }
 
+#btnlink {
+    text-decoration: none;
+    color: #dcdcdc;
+
+}
+
+#btnlink:active {
+    color: #212529;
+}
+
 #imgcode {
      width: 40px;
 }
